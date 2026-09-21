@@ -8,7 +8,7 @@ const demoBusiness = {
     name: "XYZ Cafe & Restaurant",
 
     welcome:
-        "Hello! 👋 Welcome to XYZ Cafe & Restaurant. How can I help you today?",
+        "Welcome to XYZ Cafe & Restaurant. How can I help you today?",
 
     responses: [
         // GREETING
@@ -22,7 +22,7 @@ const demoBusiness = {
                 "good evening"
             ],
             response:
-                "Hello! 👋 Welcome to XYZ Cafe & Restaurant. What would you like to know?"
+                "Hello. Welcome to XYZ Cafe & Restaurant. How can I help you?"
         },
 
         // MENU
@@ -35,7 +35,7 @@ const demoBusiness = {
                 "what do you serve"
             ],
             response:
-                "Our menu includes burgers, pizzas, pasta, sandwiches, coffee, drinks, and desserts. 🍕🍔☕ Would you like to know about a specific item?"
+                "We serve burgers, pizzas, pasta, sandwiches, coffee, drinks, and desserts. Ask me about any item for details."
         },
 
         // BURGER
@@ -45,7 +45,7 @@ const demoBusiness = {
                 "burgers"
             ],
             response:
-                "Our burgers start at NPR 350. Popular options include the Classic Burger (NPR 350), Cheese Burger (NPR 400), and Double Beef Burger (NPR 500). 🍔"
+                "Our burgers start at NPR 350. Classic Burger: NPR 350. Cheese Burger: NPR 400. Double Beef Burger: NPR 500."
         },
 
         // PIZZA
@@ -55,7 +55,7 @@ const demoBusiness = {
                 "pizzas"
             ],
             response:
-                "Our pizzas start at NPR 600. Popular choices include Margherita (NPR 600), Pepperoni (NPR 750), and BBQ Chicken (NPR 800). 🍕"
+                "Our pizzas start at NPR 600. Margherita: NPR 600. Pepperoni: NPR 750. BBQ Chicken: NPR 800."
         },
 
         // PASTA
@@ -65,7 +65,7 @@ const demoBusiness = {
                 "pastas"
             ],
             response:
-                "We offer Alfredo Pasta (NPR 450), Chicken Pasta (NPR 500), and Spicy Arrabbiata (NPR 450). 🍝"
+                "Alfredo Pasta: NPR 450. Chicken Pasta: NPR 500. Spicy Arrabbiata: NPR 450."
         },
 
         // SANDWICH
@@ -75,20 +75,29 @@ const demoBusiness = {
                 "sandwiches"
             ],
             response:
-                "Our sandwiches start at NPR 300. Popular choices include Chicken Sandwich (NPR 350), Club Sandwich (NPR 450), and Grilled Cheese Sandwich (NPR 300). 🥪"
+                "Chicken Sandwich: NPR 350. Club Sandwich: NPR 450. Grilled Cheese Sandwich: NPR 300."
         },
 
-        // COFFEE & DRINKS
+        // COFFEE
         {
             keywords: [
                 "coffee",
+                "coffees"
+            ],
+            response:
+                "We serve espresso, cappuccino, latte, and iced coffee. Coffee starts from NPR 150."
+        },
+
+        // DRINKS
+        {
+            keywords: [
                 "drink",
                 "drinks",
                 "beverage",
                 "beverages"
             ],
             response:
-                "We serve espresso, cappuccino, latte, iced coffee, soft drinks, and fresh juices. Drinks start from NPR 150. ☕🥤"
+                "We offer soft drinks, fresh juices, iced coffee, and other beverages starting from NPR 150."
         },
 
         // DESSERT
@@ -100,7 +109,7 @@ const demoBusiness = {
                 "sweets"
             ],
             response:
-                "Our desserts include chocolate cake (NPR 300), cheesecake (NPR 350), and ice cream (NPR 200). 🍰🍨"
+                "We offer chocolate cake for NPR 300, cheesecake for NPR 350, and ice cream for NPR 200."
         },
 
         // PRICES
@@ -114,7 +123,7 @@ const demoBusiness = {
                 "how much"
             ],
             response:
-                "Our menu items start from around NPR 150, with most main dishes priced between NPR 300 and NPR 800. Ask me about any specific item and I'll tell you the price."
+                "Our menu prices range from NPR 150 to NPR 800. Ask me about a specific dish for its price."
         },
 
         // OPENING HOURS
@@ -125,11 +134,10 @@ const demoBusiness = {
                 "open",
                 "opening",
                 "close",
-                "closing",
-                "when are you open"
+                "closing"
             ],
             response:
-                "We're open every day from 10:00 AM to 10:00 PM. 🕐"
+                "We're open every day from 10:00 AM to 10:00 PM."
         },
 
         // LOCATION
@@ -141,7 +149,7 @@ const demoBusiness = {
                 "located"
             ],
             response:
-                "We're located in Kathmandu, Nepal. 📍 You can visit us anytime during our opening hours."
+                "We're located in Kathmandu, Nepal."
         },
 
         // RESERVATION
@@ -155,7 +163,7 @@ const demoBusiness = {
                 "table"
             ],
             response:
-                "Yes, we accept table reservations. Please contact our team with your preferred date, time, and number of guests. 🪑"
+                "Yes, we accept table reservations. Please contact us with your preferred date, time, and number of guests."
         },
 
         // DELIVERY
@@ -163,11 +171,10 @@ const demoBusiness = {
             keywords: [
                 "delivery",
                 "deliver",
-                "delivering",
                 "food delivery"
             ],
             response:
-                "Yes, delivery is available. 🛵 Please contact us for delivery availability and ordering details."
+                "Yes, we offer delivery. Please contact us for availability and ordering details."
         },
 
         // TAKEAWAY
@@ -179,7 +186,7 @@ const demoBusiness = {
                 "take out"
             ],
             response:
-                "Yes, takeaway orders are available. You can contact us to place your order and arrange a pickup time. 🥡"
+                "Yes, takeaway orders are available. Contact us to place your order."
         },
 
         // CONTACT
@@ -192,7 +199,7 @@ const demoBusiness = {
                 "reach"
             ],
             response:
-                "You can contact us at hello@example.com or call us at 98XXXXXXXX. We'd be happy to help! 📞"
+                "You can contact us at hello@example.com or call 98XXXXXXXX."
         },
 
         // PAYMENT
@@ -207,7 +214,7 @@ const demoBusiness = {
                 "khalti"
             ],
             response:
-                "We accept cash, major cards, and popular digital payment methods. 💳"
+                "We accept cash, cards, and popular digital payment methods."
         },
 
         // POPULAR FOOD
@@ -217,11 +224,10 @@ const demoBusiness = {
                 "best",
                 "recommend",
                 "recommendation",
-                "recommended",
-                "best food"
+                "recommended"
             ],
             response:
-                "Some of our popular choices are the Classic Burger 🍔, Margherita Pizza 🍕, and Alfredo Pasta 🍝."
+                "Our most popular dishes are the Classic Burger, Margherita Pizza, and Alfredo Pasta."
         },
 
         // VEGETARIAN
@@ -233,10 +239,10 @@ const demoBusiness = {
                 "veg food"
             ],
             response:
-                "Yes! We have several vegetarian options, including Margherita Pizza, Spicy Arrabbiata Pasta, Grilled Cheese Sandwich, salads, and desserts. 🥗"
+                "Yes, we offer vegetarian options including Margherita Pizza, Spicy Arrabbiata Pasta, and Grilled Cheese Sandwich."
         },
 
-        // SPICY FOOD
+        // SPICY
         {
             keywords: [
                 "spicy",
@@ -244,7 +250,7 @@ const demoBusiness = {
                 "hot food"
             ],
             response:
-                "If you like spicy food, we recommend our Spicy Arrabbiata Pasta and BBQ Chicken Pizza. 🌶️"
+                "For spicy food, we recommend our Spicy Arrabbiata Pasta and BBQ Chicken Pizza."
         },
 
         // SOCIAL MEDIA
@@ -256,7 +262,7 @@ const demoBusiness = {
                 "facebook"
             ],
             response:
-                "You can find XYZ Cafe & Restaurant on our social media pages for the latest updates, offers, and food photos. 📱"
+                "Our social media pages have the latest updates, offers, and food photos."
         },
 
         // THANK YOU
@@ -267,15 +273,13 @@ const demoBusiness = {
                 "thank you"
             ],
             response:
-                "You're very welcome! 😊 Let me know if there's anything else I can help you with."
+                "You're welcome. Let me know if you need anything else."
         }
     ],
 
-    // FALLBACK
     fallback:
-        "I'm happy to help! You can ask me about our menu, prices, opening hours, location, reservations, delivery, takeaway, or contact information."
+        "I can help with our menu, prices, opening hours, location, reservations, delivery, payments, and contact information."
 };
-
 
 
 /* =========================================================
