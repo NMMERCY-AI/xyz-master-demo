@@ -4,19 +4,14 @@
 ========================================================= */
 
 
-/* =========================================================
-   DEMO BUSINESS DATA
-========================================================= */
-
 const demoBusiness = {
-
-    name: "XYZ",
+    name: "XYZ Cafe & Restaurant",
 
     welcome:
-        "Hello! Welcome to XYZ. 👋 How can I help you today?",
+        "Hello! 👋 Welcome to XYZ Cafe & Restaurant. How can I help you today?",
 
     responses: [
-
+        // GREETING
         {
             keywords: [
                 "hello",
@@ -26,109 +21,259 @@ const demoBusiness = {
                 "good afternoon",
                 "good evening"
             ],
-
             response:
-                "Hello! 👋 Great to meet you. What would you like to know about XYZ?"
+                "Hello! 👋 Welcome to XYZ Cafe & Restaurant. What would you like to know?"
         },
 
-
+        // MENU
         {
             keywords: [
-                "service",
-                "services",
-                "offer",
-                "offers",
-                "what do you do"
+                "menu",
+                "food",
+                "foods",
+                "what do you have",
+                "what do you serve"
             ],
-
             response:
-                "XYZ provides modern digital experiences, smart customer support, and growth-focused solutions for businesses."
+                "Our menu includes burgers, pizzas, pasta, sandwiches, coffee, drinks, and desserts. 🍕🍔☕ Would you like to know about a specific item?"
         },
 
+        // BURGER
+        {
+            keywords: [
+                "burger",
+                "burgers"
+            ],
+            response:
+                "Our burgers start at NPR 350. Popular options include the Classic Burger (NPR 350), Cheese Burger (NPR 400), and Double Beef Burger (NPR 500). 🍔"
+        },
 
+        // PIZZA
+        {
+            keywords: [
+                "pizza",
+                "pizzas"
+            ],
+            response:
+                "Our pizzas start at NPR 600. Popular choices include Margherita (NPR 600), Pepperoni (NPR 750), and BBQ Chicken (NPR 800). 🍕"
+        },
+
+        // PASTA
+        {
+            keywords: [
+                "pasta",
+                "pastas"
+            ],
+            response:
+                "We offer Alfredo Pasta (NPR 450), Chicken Pasta (NPR 500), and Spicy Arrabbiata (NPR 450). 🍝"
+        },
+
+        // SANDWICH
+        {
+            keywords: [
+                "sandwich",
+                "sandwiches"
+            ],
+            response:
+                "Our sandwiches start at NPR 300. Popular choices include Chicken Sandwich (NPR 350), Club Sandwich (NPR 450), and Grilled Cheese Sandwich (NPR 300). 🥪"
+        },
+
+        // COFFEE & DRINKS
+        {
+            keywords: [
+                "coffee",
+                "drink",
+                "drinks",
+                "beverage",
+                "beverages"
+            ],
+            response:
+                "We serve espresso, cappuccino, latte, iced coffee, soft drinks, and fresh juices. Drinks start from NPR 150. ☕🥤"
+        },
+
+        // DESSERT
+        {
+            keywords: [
+                "dessert",
+                "desserts",
+                "sweet",
+                "sweets"
+            ],
+            response:
+                "Our desserts include chocolate cake (NPR 300), cheesecake (NPR 350), and ice cream (NPR 200). 🍰🍨"
+        },
+
+        // PRICES
         {
             keywords: [
                 "price",
+                "prices",
                 "pricing",
                 "cost",
                 "costs",
                 "how much"
             ],
-
             response:
-                "Our pricing depends on the project and features you need. Contact our team and we'll help you find the right solution."
+                "Our menu items start from around NPR 150, with most main dishes priced between NPR 300 and NPR 800. Ask me about any specific item and I'll tell you the price."
         },
 
-
+        // OPENING HOURS
         {
             keywords: [
-                "hour",
                 "hours",
+                "hour",
                 "open",
                 "opening",
                 "close",
-                "closing"
+                "closing",
+                "when are you open"
             ],
-
             response:
-                "Our demo business is available every day from 10:00 AM to 10:00 PM."
+                "We're open every day from 10:00 AM to 10:00 PM. 🕐"
         },
 
-
-        {
-            keywords: [
-                "contact",
-                "email",
-                "phone",
-                "call",
-                "reach"
-            ],
-
-            response:
-                "You can contact our team at hello@example.com. We'd be happy to discuss your project."
-        },
-
-
+        // LOCATION
         {
             keywords: [
                 "location",
                 "where",
-                "address"
+                "address",
+                "located"
             ],
-
             response:
-                "XYZ is based in Kathmandu, Nepal. This is a demo location that can be replaced with a client's real location later."
+                "We're located in Kathmandu, Nepal. 📍 You can visit us anytime during our opening hours."
         },
 
-
+        // RESERVATION
         {
             keywords: [
-                "website",
-                "web",
-                "website design"
+                "reservation",
+                "reservations",
+                "reserve",
+                "book",
+                "booking",
+                "table"
             ],
-
             response:
-                "Yes. We create modern, responsive websites designed around your brand and your customers."
+                "Yes, we accept table reservations. Please contact our team with your preferred date, time, and number of guests. 🪑"
         },
 
-
+        // DELIVERY
         {
             keywords: [
-                "ai",
-                "chatbot",
-                "assistant"
+                "delivery",
+                "deliver",
+                "delivering",
+                "food delivery"
             ],
-
             response:
-                "Yes! This chat widget can work as a smart customer-support assistant that answers questions and guides visitors."
+                "Yes, delivery is available. 🛵 Please contact us for delivery availability and ordering details."
+        },
+
+        // TAKEAWAY
+        {
+            keywords: [
+                "takeaway",
+                "take away",
+                "takeout",
+                "take out"
+            ],
+            response:
+                "Yes, takeaway orders are available. You can contact us to place your order and arrange a pickup time. 🥡"
+        },
+
+        // CONTACT
+        {
+            keywords: [
+                "contact",
+                "phone",
+                "call",
+                "email",
+                "reach"
+            ],
+            response:
+                "You can contact us at hello@example.com or call us at 98XXXXXXXX. We'd be happy to help! 📞"
+        },
+
+        // PAYMENT
+        {
+            keywords: [
+                "payment",
+                "payments",
+                "pay",
+                "card",
+                "cash",
+                "esewa",
+                "khalti"
+            ],
+            response:
+                "We accept cash, major cards, and popular digital payment methods. 💳"
+        },
+
+        // POPULAR FOOD
+        {
+            keywords: [
+                "popular",
+                "best",
+                "recommend",
+                "recommendation",
+                "recommended",
+                "best food"
+            ],
+            response:
+                "Some of our popular choices are the Classic Burger 🍔, Margherita Pizza 🍕, and Alfredo Pasta 🍝."
+        },
+
+        // VEGETARIAN
+        {
+            keywords: [
+                "vegetarian",
+                "veg",
+                "vegetarian food",
+                "veg food"
+            ],
+            response:
+                "Yes! We have several vegetarian options, including Margherita Pizza, Spicy Arrabbiata Pasta, Grilled Cheese Sandwich, salads, and desserts. 🥗"
+        },
+
+        // SPICY FOOD
+        {
+            keywords: [
+                "spicy",
+                "spicy food",
+                "hot food"
+            ],
+            response:
+                "If you like spicy food, we recommend our Spicy Arrabbiata Pasta and BBQ Chicken Pizza. 🌶️"
+        },
+
+        // SOCIAL MEDIA
+        {
+            keywords: [
+                "instagram",
+                "social",
+                "social media",
+                "facebook"
+            ],
+            response:
+                "You can find XYZ Cafe & Restaurant on our social media pages for the latest updates, offers, and food photos. 📱"
+        },
+
+        // THANK YOU
+        {
+            keywords: [
+                "thank",
+                "thanks",
+                "thank you"
+            ],
+            response:
+                "You're very welcome! 😊 Let me know if there's anything else I can help you with."
         }
-
     ],
 
-
+    // FALLBACK
     fallback:
-        "I'm here to help with questions about XYZ, including our services, pricing, opening hours, location, and contact information. What would you like to know?"
+        "I'm happy to help! You can ask me about our menu, prices, opening hours, location, reservations, delivery, takeaway, or contact information."
 };
 
 
